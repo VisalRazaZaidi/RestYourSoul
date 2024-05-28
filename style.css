@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
+ body{
     background-color: #ddd;
     margin: 0;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,31 +135,41 @@ body{
     }
 }
 
-@media only screen and (max-width: 375px) {
-    .container {
-        zoom: 0.7;
-         padding: 20px;
-     }
-    .container.song-info {
-         padding: 10px 10px 5px 100px;
-     }
-    .container.disk {
-         max-width: 80px;
-     }
-    .container.disk.cover {
-         width: 100px;
-         height: 100px;
-     }
-    .container.controls {
-         width: 300px;
-         height: 80px;
-     }
-    .container.controls #play {
-         padding: 10px 12px 10px 13px;
-         font-size: 20px;
-     }
-    .container.controls i {
-         padding: 20px 6px;
-         font-size: 25px;
-     }
- }
+/* Media Queries for Mobile Screens */
+@media only screen and (max-width: 768px) {
+   .container {
+        padding: 20px;
+    }
+   .container .song-info {
+        padding: 10px 10px 5px 100px;
+    }
+   .container .disk {
+        max-width: 80px;
+    }
+   .container .disk .cover {
+        width: 100px;
+        height: 100px;
+    }
+   .container .controls {
+        width: 300px;
+        height: 80px;
+    }
+   .container .controls #play {
+        padding: 10px 12px 10px 13px;
+        font-size: 20px;
+    }
+   .container .controls i {
+        padding: 20px 6px;
+        font-size: 25px;
+    }
+}
+
+/* Media Queries for Small Mobile Screens */
+@media only screen and (max-width: 480px) {
+   .container {
+        padding: 15px;
+    }
+    .container .disk .circle{
+        top: 22%;
+    }
+}    
